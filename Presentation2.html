@@ -1,0 +1,826 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link href='http://fonts.googleapis.com/css?family=Nunito:300' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<script type="text/x-mathjax-config">
+		  MathJax.Hub.Config({
+			tex2jax: {
+			  inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+			  processEscapes: true
+			}
+		  });
+		</script>
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+			  displayAlign: "left",
+			  displayIndent: "2em"
+			});
+		</script>
+		<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any 'section' element inside of this container is displayed as a stiflide -->
+			<div class="slides">
+				<section data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+					<h4>MODELOS DE PÉRDIDA INCURRIDA Y</h4>
+					<h4>PÉRDIDA ESPERADA EN EL MARCO NIC 39 - NIIF 9</h4>
+					<br>
+					<!--<h3 style="color: black; font-size: .7em;">Implicaciones para entidades que mantienen activos a coste amortizado </h3>
+					<br> -->
+
+				</section>
+				<section data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+					<table>
+						<tr>
+							<td >
+
+							<h4>Elaboró</h4>
+
+
+							<p style="color: black; font-size: .7em;"><em>Haden Morgan</em> </p>
+							</td>
+
+							<td class="fragment">
+							<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Equipo actuarial</h4>
+
+							<h4 style="color: black; font-size: .8em;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math Decision</h4>
+
+							<p style="color: black; font-size: .7em;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Juliana Hincapié</em> </p>
+							<p style="color: black; font-size: .7em;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Carlos Restrepo</em> </p>
+							<p style="color: black; font-size: .7em;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Ricardo Restrepo</em> </p>
+							</td>
+						</tr>
+					</table>
+
+				</section>
+
+
+				<section>
+					<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+						<h4>CONTENIDO</h4>
+						<br>
+						<ol class="fragment">
+							<li type="I">INTRODUCCIÓN</li>
+							<li type="I" >APLICABILIDAD</li>
+							<li type="I" >ACTIVOS IMPLICADOS</li>
+							<li type="I" >MODELO DE PÉRDIDA INCURRIDA – NIC 39</li>
+							<li type="I" >RAZONES PARA LA TRANSICION AL NUEVO MODELO</li>
+							<li type="I" >PROPÓSITO Y ÁMBITO DEL MODELO NUEVO</li>
+							<li type="I" >MODELO DE PÉRDIDA ESPERADA – NIIF 9</li>
+
+						</ol>
+					</section>
+					<section data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -40px;">
+						<ol start="8">
+							<li type="I" >COMPARACIÓN DE LOS MODELOS</li>
+							<li type="I" >MODELACION DE FLUJOS DE CAJA ESPERADOS</li>
+							<li type="I" >CONSISTENCIA DEL REPORTE</li>
+							<li type="I" >RETOS</li>
+							<li type="I" >EJEMPLO</li>
+							<li type="I" >CONCLUSIONES</li>
+
+						</ol>
+					</section>
+				</section>
+
+				<section>
+					<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+						<h4>INTRODUCCIÓN</h4>
+						<br>
+						<ul>
+							<li>Nuevas reglamentaciones con respecto a la clasificación y medición de instrumentos financieros entrarán en rigor el <b>1 de enero de 2018</b>. Sin embargo, se permite su aplicación previa.</li>
+						</ul>
+							<p><em style="font-weight: bold; font-size: 1.1em;">NIIF 9 Instrumentos Financieros</em> reemplazará</p>
+							<p><em style="font-weight: bold; font-size: 1.1em;">NIC 39 Instrumentos Financieros: reconocimiento y medición </em></p>
+						<br>
+
+					</section>
+
+					<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+						<br>
+						<ul>
+						<li>En la regulación actual (lineamientos de NIC 39) sólo las pérdidas incurridas son reportadas en el estado de resultados.</li>
+						</ul>
+							<br>
+
+					</section>
+
+					<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+						<br>
+						<ul>
+						<li>Los nuevos lineamientos de NIIF 9 requieren una transición a un modelo de pérdida esperada, en el cual se reconocen las expectativas de pérdidas en los créditos otorgados.</li>
+						</ul>
+							<br>
+
+					</section>
+				</section>
+
+
+				<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+					<h4>APLICABILIDAD</h4>
+					<br>
+					<p class="fragment" style="font-weight: bold; font-size: .8em;">Entidades con activos a coste amortizado y todos los instrumentos financieros sujetos a contabilidad por deterioro:  </p>
+					<br>
+					<ul>
+						<li class="fragment">Empresas comerciales e industriales con créditos por ventas</li>
+						<li class="fragment">Inversiones en activos financieros con el fin de gestionar su liquidez</li>
+						<li class="fragment">Compañías de seguros que invierten dinero en activos financieros para cubrir sus pasivos por seguros</li>
+					</ul>
+						<br>
+
+				</section>
+
+				<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+					<h4>ACTIVOS IMPLICADOS</h4>
+					<br>
+					<ul>
+						<li class="fragment">Activos de tasa fija</li>
+						<li class="fragment">Activos de tasa variable </li>
+						<li class="fragment">Contabilidad de coberturas</li>
+						<li class="fragment">Activos financieros rotativos </li>
+						<li class="fragment">Créditos por ventas </li>
+						<li class="fragment">Cuentas por cobrar de arrendamientos </li>
+						<li class="fragment">Activos financieros colateralizados </li>
+						<li class="fragment">Activos financieros de garantía</li>
+					</ul>
+					<br>
+
+				</section>
+
+				<section>
+					<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+						<h4>MODELO DE PÉRDIDA INCURRIDA – NIC 39</h4>
+						<br>
+						<ol>
+							<li class="fragment">El VAN inicial es calculado únicamente a partir de los flujos de efectivo contractuales esperados <b>sin</b> tener en cuenta las posibles pérdidas crediticias.</li>
+							<li class="fragment">Las pérdidas esperadas no se reconocen en el estado de resultados. </li>
+							<li class="fragment">Sólo se tienen en cuenta las pérdidas incurridas por deterioro para calcular cambios en el valor del activo reportado en libros.</li>
+
+
+						</ol>
+						<br>
+
+					</section>
+					<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+
+						<ol start="4">
+							<li>NIC 39 utiliza una definición ligeramente modificada de lo que tradicionalmente se considera una pérdida por deterioro.</li>
+						</ol>
+						<br><br>
+						<ul>
+							<li style="margin-left: 2em" class="fragment">Por ejemplo, una reducción de la calificación de crédito, normalmente sería motivo para ser considerado un deterioro (y la reducción en el VAN del activo debido a la reducción implícita en el valor presente de los flujos futuros de efectivo). Sin embargo, según NIC 39 "la reducción en la calificación crediticia de la entidad no es, por sí misma, evidencia de deterioro".
+
+						</ul>
+						<br>
+
+					</section>
+					<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+
+						<ol start="5">
+							<li>Una vez el activo se considera deteriorado, el nuevo valor en libros se calcula con la tasa de interés efectiva en el reconocimiento inicial. Los cambios en la calidad crediticia o cambios en la probabilidad de incumplimiento futuro no se tienen en cuenta. </li>
+							<br>
+						</ol>
+						<ul>
+								<li  style="margin-left: 2em" class="fragment">Por ejemplo, dos pagos atrasados posiblemente aumenten la probabilidad de incumplimiento, sin embargo el VAN no se ajusta como corresponde.</li>
+						</ul>
+						<br>
+
+					</section>
+				</section>
+
+
+				<section>
+					<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+						<h4>Causas objetivas de pérdida</h4>
+						<br>
+						<h3 style="font-size: .7em;">Dificultades financieras del emisor o del obligado </h3>
+
+						<p class="fragment">Cuando existe evidencia del impago de los flujos de efectivo futuros debido a dificultades financieras del emisor u obligado. </p>
+
+						<br>
+
+					</section>
+					<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+
+						<br>
+						<h3 style=" font-size: .7em;">Incumplimiento de cláusulas contractuales </h3>
+						<br>
+						<p class="fragment">Incumplimiento de las cláusulas contractuales, tales como impagos o retrasos en el pago de los intereses o el principal.</p>
+
+						<br>
+
+					</section>
+					<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+
+						<br>
+						<h3 style=" font-size: .7em;">Concesiones especiales </h3>
+						<br>
+						<p class="fragment">El prestamista, por razones económicas o legales relacionadas con dificultades financieras del prestatario, otorga al prestatario concesiones o ventajas que en otro caso no hubiera otorgado.</p>
+
+						<br>
+
+					</section>
+					<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+
+						<br>
+						<h3 style="font-size: .7em;">Posible liquidación o reorganización financiera</h3>
+						<br>
+						<p class="fragment">Es cada vez más probable que el prestatario entre en una situación concursal o en cualquier otra situación de reorganización financiera.</p>
+
+						<br>
+
+					</section>
+					<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+
+						<br>
+						<h3 style=" font-size: .7em;">Liquidez del activo</h3>
+						<br>
+						<p class="fragment">Desaparece el mercado activo para el activo financiero en cuestión, debido a dificultades financieras. Para este reconocimiento no es suficiente el hecho que los instrumentos financieros no vayan a cotizar más. Tampoco es suficiente una rebaja en la calificación crediticia (a menos que se considere conjuntamente tal evidencia con otra información disponible).</p>
+
+						<br>
+
+					</section>
+					<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+
+						<br>
+						<h3 style=" font-size: .7em;">Deterioro en grupo de activos financieros</h3>
+						<br>
+						<p class="fragment">Los datos observables indican que existe una disminución mensurable en los flujos de efectivo estimados futuros en un grupo de activos financieros después del reconocimiento inicial de éstos, aunque la disminución no puede ser identificada todavía entre los activos financieros individuales del grupo, incluyendo entre tales datos:</p>
+						<ul>
+							<li style="margin-left: 2em" class="fragment">Cambios adversos en las condiciones de pago de los prestatarios del grupo</li>
+							<li style="margin-left: 2em" class="fragment">Condiciones económicas locales o nacionales que se correlacionen con impagos en los activos del grupo</li>
+						</ul>
+						<br>
+
+					</section>
+
+
+				</section>
+
+
+
+
+
+
+				<section>
+					<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+						<h4>RAZONES PARA LA TRANSICIÓN AL NUEVO MODELO </h4>
+						<br>
+						<ol>
+							<li class="fragment">Durante la crisis financiera anterior, aumentaron las críticas hacia el modelo de pérdidas incurridas planteado por NIC 39.</li>
+							<li class="fragment">Las pérdidas por deterioro y los cambios subsiguientes en el valor solo pueden ser reportados cuando hay evidencia de que las pérdidas efectivamente han sido incurridas. Las entidades de reporte no están autorizadas para considerar los efectos de pérdidas esperadas.</li>
+
+						</ol>
+						<br>
+
+					</section>
+					<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+
+						<ol start="3">
+							<li>El temprano reconocimiento de las pérdidas crediticias podría haber reducido potencialmente la magnitud de los movimientos cíclicos durante la última crisis financiera. </li>
+							<li class="fragment">Analistas e inversionistas argumentan que los resultados financieros producidos por el modelo NIC 39 son generalmente confusos y no proveen suficiente información para comprender las actividades de gestión de riesgos de las empresas.</li>
+							<li class="fragment">El nuevo modelo NIIF 9  provee mayor transparencia de la verdadera posición de los activos financieros.	</li>
+
+						</ol>
+						<br>
+
+					</section>
+					<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+
+						<ol start="6">
+							<li>Eliminar los factores psicológicos y políticos de las decisiones financieras tomadas por ejecutivos o políticos sería lo mejor para los accionistas o ciudadanos. Actualmente solo las pérdidas incurridas deben ser reportadas, por lo cual hay un incentivo a nunca dejar la deuda alcanzar su punto de maduración, incluso si fuera esta la decisión más prudente.
+								<br>
+
+
+						</ol>
+						<br>
+
+					</section>
+				</section>
+
+				<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -40px;">
+					<h4>PROPÓSITO Y ÁMBITO DEL NUEVO MODELO </h4>
+					<br><br>
+					<ol>
+						<li type="a" class="fragment">Asegurar que un activo no se reporta por un importe que supera su valor real actual.</li>
+						<br>
+						<li type="a" class="fragment">Prevenir que la posición financiera y comportamiento de una entidad de reporte sea exagerada.</li>
+					</ol>
+						<br>
+
+				</section>
+
+
+				<section>
+					<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+						<h4>MODELO DE PÉRDIDA ESPERADA – NIIF 9</h4>
+						<br>
+						<br>
+						<ol>
+							<li class="fragment">El VAN es calculado a partir de los flujos de efectivo esperados, teniendo en cuenta futuras pérdidas crediticias.</li>
+							<br>
+								<!--<li type="a" style="margin-left: 2em" class="fragment">Por ejemplo, el margen de riesgo asociado a un préstamo individual será deducido de la tasa de interés efectiva de instrumentos contractuales.</li>-->
+						<aside class="notes">
+
+							...For example, the risk margin associated with an individual loan would be deducted from the instruments NPV
+						</aside>
+
+						</ol>
+						<br>
+
+					</section>
+					<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+
+						<ol start="2">
+							<li> Son reconocidas las pérdidas por deterioro debido a cambios adversos en las expectativas de pérdida de crédito.</li>
+							<br>
+							<li class="fragment">Las pérdidas por deterioro o las ganancias se muestran en una partida separada en el estado de resultados cuando las expectativas cambian.</li>
+
+						</ol>
+						<br>
+
+					</section>
+					<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+
+						<ol start="4">
+							<li>Los flujos de caja esperados y las pérdidas esperadas están sujetas a la reestimación periódica.</li>
+							<br>
+							<li class="fragment">No se incorporan pérdidas inesperadas fuera de un intervalo de confianza determinado. </li>
+
+						</ol>
+						<br>
+
+					</section>
+				</section>
+
+
+
+
+			<!-- REVIEW PLUS ADD MORE - The Below Slide-->
+
+
+				<section>
+					<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+						<h4>COMPARACIÓN DE LOS MODELOS</h4>
+						<br><br>
+						<ul>
+							<li class="fragment">El modelo de pérdida esperada es mas subjetivo comparado con el modelo de pérdida incurrida, ya que confía significativamente en la estimación del flujo de caja realizado por la entidad de reporte. </li>
+						</ul>
+
+					</section>
+					<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+
+						<ul>
+							<li>El modelo de pérdida esperada requiere que las entidades utilicen datos pronosticados, buscando incluir las probabilidades de default en el futuro.</li>
+							<br>
+							<li class="fragment">El modelo de pérdida esperada suaviza las pérdidas durante la vida del activo proporcionando una tasa de retorno consistente. Bajo el modelo de pérdida incurrida, la tasa de retorno aparece artificialmente alta al inicio, disminuyendo durante la vida del activo.</li>
+						</ul>
+
+					</section>
+				</section>
+
+
+
+			<!-- REVIEW PLUS ADD MORE - The Above Slide-->
+
+				<section>
+					<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -40px;">
+						<h3>MODELACION DE FLUJOS DE CAJA ESPERADOS</h3>
+						<br>
+						<hr style="margin-top: -40px">
+						<br>
+						<h4 class="fragment" style="text-align: left;">Datos de entrada</h4>
+						<br>
+						<p class="fragment" style="font-weight: bold; font-size: .8em;"><em>IASB Exposure Draft</em> propone que se estimen los flujos de caja esperados considerando: </p>
+					</section>
+					<section data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+						<br>
+						<ul class="fragment">
+							<li>Todos los términos contractuales del instrumento financiero: </li>
+							<li style="margin-left: 2em; list-style-type: square;" >Prepayments</li>
+							<li style="margin-left: 2em; list-style-type: square;" >Calls</li>
+							<li style="margin-left: 2em; list-style-type: square;" >Opciones similares</li>
+							<br>
+							<li class="fragment">Cuotas pagadas o recibidas entre las partes del contrato que forman parte del tipo de interés efectivo (véase la NIC 18 Ingresos ordinarios) en la medida en que no se incluyen en la medición inicial del instrumento financiero</li>
+							<br>
+							<li class="fragment">Para los activos financieros, se consideran las pérdidas esperadas durante toda la vida del activo</li>
+						</ul>
+						<br>
+					</section>
+				</section>
+
+				<section>
+					<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+						<h4>Cálculo de pérdidas esperadas</h4>
+						<br>
+						<p class="fragment" style="font-weight: bold; font-size: .8em;">El cálculo de pérdidas esperadas sobre préstamos existentes debe incorporar estimaciones con base en los eventos de pérdida pasados y futuros.</p>
+					</section>
+					<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+						<h4 style="text-align: left; font-size: .9em;">Factores a considerar: </h4>
+						<br>
+						<ul>
+							<li class="fragment">Experiencia histórica de pérdida de crédito (interna-externa)</li>
+							<br>
+							<li class="fragment">Calificaciones crediticias internas o externas</li>
+							<br>
+							<li class="fragment">Reportes externos y estadísticas</li>
+							<br>
+
+						</ul>
+
+					</section>
+					<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+						<br>
+						<ul>
+							<li>Naturaleza del prestatario</li>
+							<br>
+							<li class="fragment">Producto</li>
+							<br>
+							<li class="fragment">Mercado</li>
+							<br>
+							<li class="fragment">Perspectivas económicas</li>
+							<br>
+						</ul>
+
+					</section>
+				</section>
+
+				<section>
+					<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+						<h4>Manipulación de los datos de entrada</h4>
+						<br>
+						<ul>
+							<li class="fragment">Los datos históricos deben ajustarse sobre la base de datos actual bservable con el fin de reflejar los efectos de las condiciones presentes.</li>
+							<br>
+							<li class="fragment">La estimación de las cantidades y tiempos de flujo de efectivo deben tener en cuenta modelos probabilísticos.</li>
+							<br>
+						</ul>
+					</section>
+					<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+						<ul>
+							<li>Las pérdidas esperadas basadas en los posibles resultados de probabilidad ponderada sólo debe incluir una estimación de la pérdida que puede sufrir basada en lo que se espera que se pierde en promedio, en un horizonte de tiempo específico y en base a las exposiciones históricas.</li>
+							<br>
+							<li class="fragment">El cálculo no incorpora pérdidas por fuera de determinado nivel de probabilidad.</li>
+							<br>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+							<h4>Modelos actuariales y ejemplos de aplicación</h4>
+							<br>
+							<p>
+								Las pérdidas esperadas son reconocidas desde que el activo financiero se origina
+							</p>
+							<p class="fragment">Tres niveles:</p>
+							<p class="fragment" style="font-weight: bold; font-size: .8em; color: #337AB7;">Nivel 1 ($S_1$):</p>
+							<p class="fragment">Inicialmente, las entidades deberán informar sus pérdidas crediticias esperadas para los siguientes 12 meses.<br>
+							 - La probabilidad de incumplimiento de los próximos 12 meses, multiplicada por el total (de por vida) de las pérdidas crediticias esperadas que se derivarían de ese incumplimiento.
+							</p>
+					</section>
+
+					<section data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+							<p style="font-weight: bold; font-size: .8em; color: #337AB7;">Nivel 2 ($S_2$):</p>
+							   <p class="fragment">El riesgo de crédito aumenta significativamente y la calidad de crédito resultante se considera por debajo del “grado de inversión”. O una vez los pagos tienen más de 30 días de retraso.
+								<br>En esta etapa las pérdidas crediticias esperadas por toda la vida del préstamo deben ser reconocidas.
+							</p>
+							<br>
+							<p class="fragment" style="font-weight: bold; font-size: .8em; color: #337AB7;">Nivel 3 ($S_3$):</p>
+							<p class="fragment">Una vez la calidad crediticia de un activo financiero se reduce hasta el punto en que el activo es crédito deteriorado o las pérdidas se consideran incurridas.
+							</p>
+					</section>
+					<section data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+							<p>
+								De acuerdo a la Superintendencia Financiera de Colombia se entiende por incumplimiento el evento en el cual una operación de crédito presenta por lo menos alguna de las siguientes condiciones:
+							</p>
+							<ul class="fragment">
+								<li>Créditos comerciales que se encuentren en mora mayor o igual a 150 días</li>
+								<li>Créditos de tesorería en mora</li>
+								<li>Créditos de consumo que se encuentren en mora mayor a 90 días </li>
+								<li>Créditos de consumo que se encuentren en mora mayor a 90 días </li>
+								<li>Créditos de vivienda que se encuentren en mora mayor o igual a 180 días</li>
+								<li>Microcréditos que se encuentran en mora mayor o igual a 30 días</li>
+							</ul>
+
+
+					</section>
+
+				</section>
+
+				<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+						<h4>Pérdidas crediticias esperadas</h4>
+
+						<article>
+							<img width="960" height="500" data-src="images/Elvsil_chart_test.svg" >
+						</article>
+				</section>
+				<section>
+					<section data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+							<h4>Matriz de Rodamiento </h4>
+							<p>Las matrices estocásticas son una estimación de la probabilidad de pasar de un estado crediticio a otro.</p>
+							<!--<h4 style="font-size: .6em">Matriz Estocástica o Matriz Markov:</h4>-->
+
+							<article>
+								<img width="560" height="340" data-src="images/Matrix1_test2.svg" >
+							</article>
+							<!--<aside>- Matrix M1 - shows the probabilities for 1 month. <br> - I will explain where theses probabilities come from and how they calculated shortly..</aside>-->
+
+
+					</section>
+					<section data-transition="fade" data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+
+							<h4 style="font-size: .8em">Dada la matriz anterior:</h4>
+							<br>
+							<p>Sea $X_0$ una entidad en tiempo cero </p>
+						    <p>
+								¿Cuál es el probabilidad de que en 2 meses la entidad esté en $S_1$ dado que actualmente está en $S_1$?
+							</p>
+							<table>
+							<tr>
+							  <td class="fragment" width="30%" style="vertical-align: middle; font-size: 60%">$$P(X_2 = S_1 \lvert X_0 = S_1)$$</td>
+							  <td class="fragment" width="70%">
+								<img width="420" height="450" data-src="images/simpleflow1test.svg">
+							  </td>
+							</tr>
+						  </table>
+
+
+
+
+					</section>
+					<section width="200" data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+
+
+
+						<table>
+							<tr>
+							  <td width="30%" style="vertical-align: middle; font-size: 60%">$$P(X_2 = S_1\enspace and \enspace X_1 = S_1 \lvert X_0 = S_1)$$
+							  <br>  +
+							  <br> $$P(X_2 = S_1\enspace and \enspace X_1 = S_2 \lvert X_0 = S_1)$$</td>
+
+							  <td width="70%">
+								<img width="600" height="450" data-src="images/Circle diagram(eq_line1) copy.svg">
+							  </td>
+
+							</tr>
+						  </table>
+
+
+						<table>
+							<tr class="fragment">
+							  <td width="45%" style="vertical-align: middle; font-size: 60%">$$=>(.90)(.90) + (.10)(.05)$$<br>$$= 0.815 $$</td>
+							  <td width="55%"><article>
+								<img img width="800" height="250" data-src="images/Circle diagram(eq_line2).svg">
+						</article></td>
+
+							</tr>
+						  </table>
+					</section>
+
+				</section>
+				<section>
+					<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+							<h4>Cálculo de probabilidades según normatividad</h4>
+							<br>
+							<p class="fragment"><b>Para activos individuales o portafolios homogéneos fijos:</b></p>
+
+							<p class="fragment">Inicialmente, un activo estará en $S_1$.
+								<br>Si se requiere calcular la probabilidad de default en 12 meses, se puede estimar la matriz de transición $M_{12}$, o  multiplicar $M_1$ por sí misma 12 veces.
+							</p>
+
+
+					</section>
+					<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+
+							<p>
+								Sin embargo, si el movimiento del activo es hacia $S_2$, (aumento significativo en el riesgo de crédito / más de 30 días de mora) se debe calcular la probabilidad de incumplimiento para toda la vida del activo.
+								<br>Lo anterior se obtiene con la potencia $t$ de la matriz $M_{n}$, donde $n$ es el período de estimación y $t$ es el número de períodos de vida del activo.
+							</p>
+							<!--<aside class="notes">
+								Nota:<br> De acuerdo a la Superintendencia Financiera de Colombia, la probabilidad de incumplimiento de los deudores corresponde a la probabilidad de que en un lapso de 12 meses éstos incurran en incumplimiento.
+							<br> - the probability of moving from S1 -> S2 is not relevant for accounting purposes but is still of interest for risk management purposes.
+
+							</aside>-->
+
+
+
+					</section>
+					<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+							<p>
+								$$ Prob (X_t=j \lvert X_0=i) $$
+							</p>
+							<p>
+								$$ = (M_{n})^t_{i,j}$$
+							</p>
+							<article>
+									<img width="900" height="500" data-src="images/Matrix12mtest1.svg">
+							</article>
+
+
+					</section>
+					<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+
+							<p>
+								Para un portafolio, sólo se deben calcular las pérdidas esperadas de toda la vida de los activos que se trasladaron al nivel 2.
+							</p>
+							<article>
+									<img width="900" height="500" data-src="images/Accouning exampletest3.svg">
+							</article>
+
+					</section>
+					<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+
+							<h4 style="font-size: 0.8em">Cálculos no homogéneos</h4>
+							<br>
+							<p>Las matrices estocásticas de cada mes varían por diversos factores. Entre ellos:</p>
+							<ul>
+								<li>Factores económicos</li>
+								<li>Tiempo (mes del año)</li>
+								<li>Composición del portafolio (afluencia/salida de los préstamos)</li>
+							</ul>
+							<br>
+							<br>
+							<p>En este caso, la estimación de la probabilidad de default en 12 meses esta dada por:</p>
+							<p style="font-size: 1em">$$ M_{12} = M_{Jan}.M_{Feb}.M_{Mar}...M_{Dic}$$</p>
+
+					</section>
+				</section>
+				<section>
+					<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+						<p>
+
+						Las probabilidades halladas en las matrices anteriores pueden ser obtenidas a partir de datos históricos de transición, de un perfil de tipo y riesgo similar.<br>
+						Sin embargo, estas probabilidades deben ajustarse de acuerdo a los cambios de la normatividad. </p>
+
+					</section>
+
+				</section>
+
+
+				<section>
+					<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+							<h4>Ejemplo</h4>
+							<article>
+									<img width="950" height="450" data-src="images/Accouning exampletest4.svg">
+							</article>
+							<br>
+					</section>
+
+
+					<section  data-background="images/image2.jpg" style="margin-bottom: -50px; margin-top: -20px;">
+							<h4 style="font-size: 0.6em;">Cálculo de pérdida esperada</h4>
+							<article>
+									<img width="392" height="503" data-src="images/Captura de pantalla 2015-08-14 a las 12.22.55.png">
+							</article>
+							<br>
+					</section>
+
+				</section>
+
+
+				<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+						<h4>Más allá de los requerimientos</h4>
+						<br>
+						<ul>
+							<li>Es posible predecir la composición de un portafolio en el futuro. </li>
+							<li>El modelo de Markov implica independencia entre transiciones y elementos del portafolio. Otros modelos pueden ser empleados para realizar tests de estrés de ciertos eventos o situaciones que podrían tener implicaciones más significativas que las que puede mostrar un modelo Markov. El nivel de concentración del riesgo puede ser ajustado de acuerdo a la tolerancia al riesgo de cada entidad o a la regulación establecida por Basilea III. </li>
+							<li>VaR .99</li>
+							<li>Conditional VaR</li>
+						</ul>
+				</section>
+
+
+				<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+						<h4>Precisión del modelo</h4>
+						<br>
+						<ul>
+							<li class="fragment">La estimación de pérdidas esperadas utilizando un enfoque de probabilidad ponderada en grandes portafolios de activos financieros homogéneos es más precisa que el cálculo para los activos individuales. </li>
+
+							<li class="fragment">Es importante ajustar las probabilidades de riesgo empleando pronósticos e información macroeconomica, de modo que se reflejen las condiciones actuales y las estimaciones sean sensibles a las fuentes pertinentes de riesgo de crédito.</li>
+
+							<li class="fragment">Las confrontaciones periódicas de los resultados reales contra los pronósticos son fundamentales para poner a prueba la metodología empleada.</li>
+						</ul>
+				</section>
+
+				<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+						<h4>CONSISTENCIA DEL REPORTE </h4>
+						<br>
+						<p class="fragment">El juicio y la discrecionalidad desempeñan un papel fundamental en la estimación de las pérdidas crediticias esperadas. Esto puede dificultar la interpretación de agentes externos. </p>
+
+						<p class="fragment">Adicionalmente, las estimaciones de la entidad y el cálculo de las pérdidas esperadas pueden diferir de las estimaciones realizadas por el regulador. </p>
+				</section>
+
+				<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+						<h4>Retos</h4>
+						<br>
+						<p class="fragment">Los datos deben recopilarse para todos los portafolios. Las matrices de transición requieren gran cantidad de muestras en cada una de las celdas para extraer conclusiones significativas. </p>
+
+						<p class="fragment">Las entidades pueden tener dificultades con la extrapolación de datos. Las recomendaciones del Comité de Basilea requieren sólo un año de información sobre las pérdidas esperadas, mientras NIIF 9 requiere información hasta la madurez del activo. </p>
+				</section>
+
+				<section  data-background="images/image2.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+						<h4>CONCLUSIONES</h4>
+						<br>
+						<ul>
+							<li class="fragment">El modelo de pérdida esperada requiere amplio conocimiento y experiencia en la estimación de probabilidades de incumplimiento. Introducir múltiples variables en modelos complejos será un reto para las entidades.</li>
+							<li class="fragment">Sin embargo los costos extra y los recursos asociados a la estimación de pérdidas esperadas, serán ampliamente superados por los aspectos positivos del cambio: Una mejor gestión del riesgo y la transparencia de la verdadera situación financiera en la que se encuentra la compañía </li>
+
+						</ul>
+
+				</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+
+
+	</body>
+</html>
