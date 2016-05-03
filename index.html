@@ -105,8 +105,12 @@
 			<p><em style="font-weight: bold; font-size: 1.1em;">NIC 39 Instrumentos Financieros: reconocimiento y medición </em></p>
 		<br>
 		<aside class="notes">
-			Estamos aquí en el marco de la coyuntura NIIF que estamos viviendo. Este es un momento podemos divisar la transición de un sistema de información financiera y contable en el que estos dos aspectos estaban  en muchas ocasiones separados (fiscal, vs perspectivas y estimaciones del negocio) a un sistema de información que encuentra estas dos áreas en un punto intermedio.
-			Esta transición continúa tanto en el marco local como en el marco internacional: En respuesta a la crisis financiera, ciertos aspectos del reporteo de información financiera han sido reevaluados. Uno de estos es el reporteo de las pérdidas de activos financieros a coste amortizado. El 5 de Noviembre de 2009 la IASB publicó un primer borrador de lo que hoy conocemos como NIIF 9 (Instrumentos financieros) como propuesta para reemplazar la NIC39 (Instrumentos financieros, reconocimiento y valoración). En Julio de 2014 la IASB publicó la versión final de NIIF 9. Ésta entra en vigencia obligatoria para reporteo anual a partir del primero de enero de 2018.
+			<small data-markdown>
+				Estamos aquí en el marco de la coyuntura NIIF que estamos presenciando. Este es un momento en el que podemos divisar la transición de un sistema de información financiera y contable en el que estos dos aspectos estaban  en el que el aspecto contable, fiscal y regulatorio en repetidas situaciones estaba alejado del modelamiento y proyecciones financieras del negocio a un sistema de información que reune en un punto intermedio la información contable con la realidad financiera de la empresa.
+
+				Esta transición continúa tanto en el marco local como en el marco internacional: En respuesta a la crisis financiera, ciertos aspectos del reporteo de información financiera han sido reevaluados. Uno de estos es el reporteo de las pérdidas de activos financieros a coste amortizado. El 5 de Noviembre de 2009 la IASB (comité de estándares internacionales contables) publicó un primer borrador de lo que hoy conocemos como NIIF 9 (Instrumentos financieros) como propuesta para reemplazar la NIC39 (Instrumentos financieros, reconocimiento y valoración). En Julio de 2014 la IASB publicó la versión final de NIIF 9. Ésta entra en vigencia obligatoria para reporteo anual a partir del primero de enero de 2018.
+
+				</small>
 		</aside>
 	</section>
 
@@ -120,8 +124,9 @@
 		<br>
 		<aside class="notes">
 			<small data-markdown>
-				¿Es esto aplicable en Colombia? En el decreto 2496 de 2015 se recomienda la aplicación de las NIIF 9 para el grupo 1 (no se es explicito acerca de otros grupos). En requerimiento presentado por Math Decision a la superfinanciera hace un mes, nos fue informado que tal fecha sigue en pie.
-				En la charla de hoy haremos un recuento de la valoración bajo NIC39 y el cambio a NIIF9 con el fin de presentar varios modelos financieros y estadísticos usados en la valoración de activos financieros. Mi experiencia es en modelación financiera y estadística por lo tanto responderé preguntas de éste tipo, pero no estaría en capacidad de responder preguntas de naturaleza contable. Tal transición de la NIC 39 a la NIIF 9 es un cambio de naturaleza financiera más que contable, aunque las dificultades contables que acarrea no son simples, no es fácil reconciliar una contabilidad de partida doble con un movimiento, estrategia o cobertura financiera.
+				Sin embargo,  de acuerdo al decreto 2496 de 2015 se recomienda la aplicación de la NIIF 9 para el grupo 1, en reporteo anual, a partir de Enero de 2017 (no se es explicito acerca de otros grupos). En requerimiento presentado por Math Decision a la superfinanciera hace un mes, nos fue informado que tal fecha sigue en pie.
+
+				En la charla de hoy haremos un recuento del proceso de valoración de activos a coste amortizado bajo NIC39 y su cambio a NIIF9, presentando varios modelos financieros y estadísticos usados en la valoración de activos financieros. Mi experiencia es en modelación financiera y estadística por lo tanto responderé preguntas de éste tipo, pero no estaría en capacidad de responder preguntas de naturaleza contable. Es el caso que la transición de la NIC 39 a la NIIF 9 es un cambio de naturaleza más financiera que contable,aunque las dificultades contables que tal cambio acarrea no son para nada simples, ya que no es fácil reconciliar una contabilidad de partida doble con un movimiento, estrategia o cobertura financiera.
 			</small>
 		</aside>
 	</section>
@@ -134,7 +139,7 @@
 		<br>
 		<aside class="notes">
 			<small data-markdown>
-				Tal cambio en la regulación refleja un úinico aspecto: Bajo NIC 39 solo las pérdidas incurridas son reportadas en el estado de resultados. (Esto crea algunas discrepancias en el registro de  valoración de activos financieros a coste amortizado)
+				La transición de la NIC 39 a la NIIF 9 se puede sintetizar en el siguiente aspecto: Bajo NIC 39 solo las pérdidas incurridas son reportadas en el estado de resultados. (Lo que a veces  crea algunas discrepancias en el registro de  valoración de activos financieros a coste amortizado)
 			</small>
 		</aside>
 	</section>
@@ -214,10 +219,11 @@
 		<aside class="notes">
 			<small data-markdown>
 				La primera pregunta que nos debemos hacer es si la NIIF 9 tiene pertinencia en nuestro caso.
-				En este aspecto el documento final es claro en condensar la aplicabilidad a activos a coste amortizado e instrumentos sujetos a contabilidad por deterioro.
+				En este aspecto el documento final del comité IASB es claro en condensar la aplicabilidad a empresas con activos a coste amortizado e instrumentos sujetos a contabilidad por deterioro. En particular se habla,
 				Empresas comerciales e industriales con créditos por ventas.
 				Inversiones en activos financieros para gestión de liquidez.
 				¿Empresas aseguradoras? ¿Por qué las mencionamos?
+
 			</small>
 		</aside>
 
@@ -314,6 +320,15 @@
 				<li  style="margin-left: 2em" class="fragment">Por ejemplo, dos pagos atrasados posiblemente aumenten la probabilidad de incumplimiento, sin embargo el VAN no se ajusta como corresponde.</li>
 		</ul>
 		<br>
+
+		<aside class="notes">
+			<small data-markdown>
+				Una vez el activo se considera ‘deteriorado’ de acuerdo a NIC39, el nuevo valor en libros se calcula con la misma tasa de reconocimiento inicial (importante entonces que tal tasa de reconocimiento sea registrada durante la vida del activo).
+				Las pérdidas financieras se registran (lo que necesita un poco de contabilidad financiera), y este proceso se itera.
+				Veamos un ejemplo típico de ésta situación:
+			</small>
+		</aside>
+
 
 	</section>
 
@@ -454,13 +469,14 @@
 							<li class="fragment">El VAN es calculado a partir de los flujos de efectivo esperados, teniendo en cuenta futuras pérdidas crediticias.</li>
 							<br>
 								<!--<li type="a" style="margin-left: 2em" class="fragment">Por ejemplo, el margen de riesgo asociado a un préstamo individual será deducido de la tasa de interés efectiva de instrumentos contractuales.</li>-->
-						<aside class="notes">
-
-							...For example, the risk margin associated with an individual loan would be deducted from the instruments NPV
-						</aside>
-
 						</ol>
 						<br>
+						<aside class="notes">
+							<small data-markdown>
+								En el modelo de pérdida esperada el proceso de reconocimiento, vida y baja del activo es similar al proceso seguido en el modelo de pérdida incurrida, la diferencia primordial radica en incluir las pérdidas esperadas futuras en la valoración del activo. Así,
+								El valor actual neto se calcula a partir de los flujos de efectivo esperados.
+							</small>
+						</aside>
 
 					</section>
 					<section  data-background="images/background.jpg" style="margin-bottom: 50px; margin-top: -20px;">
@@ -472,6 +488,11 @@
 
 						</ol>
 						<br>
+						<aside class="notes">
+							<small data-markdown>
+								2. Las pérdidas efectivas por deterioro son reconocidas (al igual que el modelo de pérdida incurrida. Claro que en este caso el resultado es diferente)
+							</small>
+						</aside>
 
 					</section>
 					<section  data-background="images/background.jpg" style="margin-bottom: 50px; margin-top: -20px;">
@@ -483,6 +504,13 @@
 
 						</ol>
 						<br>
+
+						<aside class="notes">
+							<small data-markdown>
+								Finalmente, los flujos de caja y las pérdidas esperadas están sujetas a reestimación periódica (tal como lo hicimos en el ejemplo de pérdida incurrida).
+								Un aspecto a resaltar que precisaremos en un momento es que no se incluyen pérdidas más allá de un ‘intervalo de confianza’ u horizonte de estimación dado.
+							</small>
+						</aside>
 
 					</section>
 				</section>
@@ -864,6 +892,19 @@
 				</section>
 
 
+				<section  data-background="images/background.jpg" style="margin-bottom: 50px; margin-top: -20px;">
+						<h4>Servicios Math Decision - ACEF</h4>
+						<br>
+						<ul>
+							<li class="fragment"> Análisis cuantitativo: Problemas financieros, actuariales. Analíatica de datos, estadística, modelación, logística y optimización.</li>
+							<li class="fragment"> Diagnóstico de datos. Limpieza, estructuración. ¿Qué tipo de modelación puedo hacer con ellos?
+							 </li>
+							<li class="fragment"> Grandes datos: ¿Puedo extraer conocimiento de mis datos? </li>
+							<li class="fragment"> Entidades reguladas. Cuantificación de riesgos: Liquidez, crédito. Alertas temprana: Sarlaft, fraude. </li>
+							<li class="fragment"> Sector real. Logística. Proyecciones. Modelación y simulación de unidades de negocio. </li>
+						</ul>
+
+				</section>
 
 
 
